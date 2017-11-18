@@ -1,0 +1,29 @@
+{
+    "php.validate.executablePath": "D:/MAMP/bin/php/php7.1.5/php.exe",
+
+    "deploy": {
+        "packages": [
+            {
+                "name": "Danique de Jong Google site",
+                "description": "Portfolio site",
+                "deployOnSave": true,
+                "exclude": [
+                    ".vscode/**",
+                    ".git/**",
+                    "vendor/**"
+                ]
+            }
+        ],
+
+        "targets": [
+            {
+                "type": "sftp",
+                "name": "daniquedejong.nl",
+                "description": "Portfolio webhost",
+                "dir": "/subdomains/school/honeypot/",
+                "host": "daniquedejong.nl.transurl.nl", "port": 22,
+                "user": "daniquedejong.nl", "password": "heuendiwkn73!L"
+            }
+        ]
+    }
+}
